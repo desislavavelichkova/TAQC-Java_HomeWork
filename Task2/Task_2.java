@@ -1,4 +1,8 @@
-public static void main(String[] args) {
+package Task2;
+
+public class Task_2 {
+
+    public static void main(String[] args) {
         System.out.print("Enter number: ");
         String numberString = System.console().readLine();
         Integer number;
@@ -16,3 +20,4 @@ public static void main(String[] args) {
             System.out.println("positive " + Integer.toString(number).length() + "-digit");
         }
     }
+}
