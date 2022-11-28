@@ -1,4 +1,4 @@
-package Task2;
+package dashov.Task2;
 
 public class Task_2 {
 
