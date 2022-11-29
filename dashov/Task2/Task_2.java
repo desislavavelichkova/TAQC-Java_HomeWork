@@ -1,10 +1,11 @@
-package dashov.Task2;
+import java.util.Scanner;
 
 public class Task_2 {
 
     public static void main(String[] args) {
+        Scanner myInput = new Scanner( System.in );
         System.out.print("Enter number: ");
-        String numberString = System.console().readLine();
+        String numberString = myInput.nextLine();
         Integer number;
 
         try {
