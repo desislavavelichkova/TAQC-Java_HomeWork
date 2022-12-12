@@ -1,3 +1,5 @@
+package dashov.Task2;
+
 import java.util.Scanner;
 
 public class Task_2 {

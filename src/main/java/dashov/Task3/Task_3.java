@@ -1,3 +1,5 @@
+package dashov.Task3;
+
 class Task_3 {
     static void find_century(int year) {
         if (year <= 0)
