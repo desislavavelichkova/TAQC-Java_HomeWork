@@ -1,21 +1,18 @@
 package dashov.OOP;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class Leopard extends Predator {
+
+    public Leopard(String name, int size, int weight) {
+        super(name, size, weight);
+    }
+
+    @Override
+    void eatingOtherAnimal() {
+        System.out.println("Leopard is eating antelopes.");
+    }
 
     @Override
     public void speed() {
         System.out.println("Leopard speed is 140 km/h.");
     }
-
-    void eating() {
-        System.out.println("Leopard is eating antelopes.");
-    }
-
-   void livingArea(String[] areaArray) {
-       List<String> area = Arrays.asList(
-       );
-   }
 }

@@ -9,16 +9,30 @@ package dashov.OOP;
 
 public  class CreatingAnimal {
     public static void main(String[] args){
-        Lion lion1 = new Lion();
-        lion1.speed();
-        lion1.eating();
 
+        //Creating lion object with name, size and weight
+        Lion lion = new Lion("Lio", 190, 100);
+        //Calling methods that are overridden
+        lion.speed();
+        lion.eatingOtherAnimal();
 
-        Leopard leopard = new Leopard();
+        //Creating leopard object with name, size and weight
+        Leopard leopard = new Leopard("Phil", 130, 70);
+        //Calling methods that are overridden
         leopard.speed();
-        leopard.eating();
+        leopard.eatingOtherAnimal();
 
-        leopard.goToSleep();
-        lion1.goToSleep();
+        //Calling methods that are defined in Interface and can't be overridden
+        leopard.sleep();
+        lion.sleep();
+
+        //Creating flamingo object
+        Flamingo flamingo = new Flamingo();
+
+        //Prints flamingo food with letter S
+        flamingo.eatsFoodThatStartWithS();
+
+        //Prints other flamingo data from HashMap where the key starts with K
+        flamingo.otherFlamingoData();
     }
 }

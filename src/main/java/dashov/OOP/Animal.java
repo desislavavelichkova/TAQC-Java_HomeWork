@@ -1,11 +1,7 @@
 package dashov.OOP;
-
 interface Animal {
-
     void speed();
-    default void goToSleep() {
+    default void sleep() {
         System.out.println("Zzzzz");
     }
-
 }
-
